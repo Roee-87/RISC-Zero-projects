@@ -1,0 +1,51 @@
+# #Start the Game here
+# POST http://127.0.0.1:8080/start
+# Content-Type:  application/json
+
+# {
+#     "password": "TEMP",
+#     "puzzle_size": 22
+# }
+
+
+# # winning entry
+# POST http://127.0.0.1:8080/submission
+# Content-Type:  application/json
+
+# {
+#     "strategy": [19, 21, 18, 16, 15, 22, 20],
+#     "name": "Mike"
+# }
+
+
+# # legal entry but doesn't beat the tax collector
+# POST http://127.0.0.1:8080/submission
+# Content-Type:  application/json
+
+# {
+#     "strategy": [19, 21, 18, 16, 15, 22],
+#     "name": "Freddy"
+# }
+
+
+# # Losing entry (score of zero)
+# POST http://127.0.0.1:8080/submission
+# Content-Type:  application/json
+
+# {
+#     "strategy": [15, 6, 1],
+#     "name": "Jenny"
+# }
+
+
+# Game Over
+# POST http://127.0.0.1:8080/end
+# Content-Type:  application/json
+
+# {
+#     "password": "TEMP"
+# }
+
+# # Calculate Score and determine the winner
+# GET http://127.0.0.1:8080/winner
+
