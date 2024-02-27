@@ -23,7 +23,7 @@ Then click `Send Request` in the `dev.http` window. This will enable submission 
 
 Alternatively, you can enter the admin password and set the puzzle size using the front end: localhost:3000/admin.
 
-You should see the following output:
+If you started the server with `RUST_LOG=info cargo run`, the following output will be generated:
 
 ```bash
 Listening at localhost/8080
