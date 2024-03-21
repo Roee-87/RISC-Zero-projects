@@ -1,10 +1,12 @@
 Tax Collector Puzzle with Pause/Resume.
 
-Rules: https://mathforlove.com/wp-content/uploads/2023/02/Beat-the-Tax-Collector.pdf
-
-Explanation: https://www.notion.so/risczero/Solutions-Engineering-Project-Ideas-4ba3ddf6f22b46c3b23a4ba87c1cc152?p=795c05ee85a04e7e8057773400baa474&pm=s&pvs=31
-
 Try to beat the tax collector for array [1..N].
+
+The Admin sets the size of the puzzle array.  Players select a number from the array that has at least one of its factors still present in the array.  If no factors are present, that number is inaccessible and must remain in the array.  For example, if a player select the number `6` from an array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, the player then collects the number `6` but must pay the tax collector any present factors of the number `6`.  Selecting `6` would result in a new array `[4, 5, 7, 8, 9, 10]`.  The player can now only select `8` or `10` for the next move because only those two numbers have any remaining factors present in the new array.
+
+Any remaining numbers left in the array are awarded to the tax collector.  The player wins if his score is higher than the tax collector's score.  The webserver allows for multiple players to play against each other.  In a multi-player game, the earliest highest scoring submission will be the winner.
+
+Rules: https://mathforlove.com/wp-content/uploads/2023/02/Beat-the-Tax-Collector.pdf
 
 There are two ways to interface with the program. You have the option of using a very basic front end, or you can make http requests directly in the dev.http window in the zkvm directory. Instructions for making HTTP requests directly can be found in the ZKVM ReadMe.
 
