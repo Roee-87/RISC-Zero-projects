@@ -2,6 +2,8 @@
 
 Try to beat the tax collector for array [1..N].
 
+This game uses the RISC Zero zkVM to generate and verify proofs for players entering submission for the tax collector puzzle game. The proofs attest to correct calculation of players' scores. The archicture of the backend is meant to showcase the capability for developers to build a game, lottery, or puzzle application that allows players to trustlessly compete in a fair setting. Furthermore, the zero-knowledge element enables submissions to remain private while ensuring that winners are determined fairly and correctly.
+
 ## Introduction and Rules
 
 Full Explanation of the Rules: https://mathforlove.com/wp-content/uploads/2023/02/Beat-the-Tax-Collector.pdf
